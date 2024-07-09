@@ -33,7 +33,6 @@ jobs:
         nohup python app.py &
 
     - name: OWASP ZAP scan
-      uses: zaproxy/action-full-scan@v1.0.0
+      uses: zaproxy/action-full-scan@v0.4.0
       with:
         target: 'http://127.0.0.1:5000'
-        rules_file_name: '.zap/rules'
